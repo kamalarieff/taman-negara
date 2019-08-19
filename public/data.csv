@@ -1,0 +1,15 @@
+Day,Time,Where,Task,Who
+1,08:00,,Luggage (Load),Jihan
+1,10:00,,Luggage (unload),Gan
+1,,,Assist to climb boat,"Denise,Suan"
+1,,,Staircase,Priyanka
+1,,,Direct to Restaurant,Shahriman
+1,,,In Restaurant ,Chung
+1,,,Reception,"Salin,Bee Yen,Suzana"
+1,,,At Team Building ,"Salin,Suzana,Bee Yen,Wai Hong,Jihan,Denise,Kamal,Adira,Gan"
+1,,,Reception,"Suan,Sudheer,Priyanka,Chung,Shahriman"
+1,,,RiverBank,"Salin,Suzana,Bee Yen,Kamal,Gan,Musician"
+1,,,Direct to Jetty,Suan 
+1,,,Jetty,"Shahriman,Wai Hong"
+1,,,Jetty to Reception,"Shahriman,Wai Hong,Sudheer,Kamal,Gan"
+1,,,Clear Riverbank,"Salin,Suzana,Bee Yen,Adira"
