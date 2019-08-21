@@ -5,6 +5,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Drawer from "@material-ui/core/Drawer";
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 import Volunteer from "./modules/volunteers";
 import Bus from "./modules/bus";
 
@@ -26,14 +29,18 @@ function App() {
       <Drawer open={drawerOpen} onClose={toggleDrawer}>
         <div style={{ minWidth: "15em" }}>
           <nav>
-            <ul>
-              <li>
-                <Link to="/">Volunteers</Link>
-              </li>
-              <li>
-                <Link to="/bus/">Bus</Link>
-              </li>
-            </ul>
+            <List>
+              <ListItem>
+                <Link to="/">
+                <ListItemText primary="Volunteers"/>
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link to="/bus/">
+                <ListItemText primary="Bus"/>
+                </Link>
+              </ListItem>
+            </List>
           </nav>
         </div>
       </Drawer>
