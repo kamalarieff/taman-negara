@@ -6,6 +6,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Drawer from "@material-ui/core/Drawer";
 import Volunteer from "./modules/volunteers";
+import Bus from "./modules/bus";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -32,16 +33,13 @@ function App() {
               <li>
                 <Link to="/bus/">Bus</Link>
               </li>
-              <li>
-                <Link to="/users/">Users</Link>
-              </li>
             </ul>
           </nav>
         </div>
       </Drawer>
       <Container maxWidth="md" style={{ overflowX: "auto" }}>
         <Route path="/" exact component={Volunteer} />
-        <Route path="/bus/" component={Volunteer} />
+        <Route path="/bus/" component={Bus} />
       </Container>
     </Router>
   );

@@ -181,3 +181,244 @@ export const data = [
     Note: "To ensure lifejacket properly worn"
   }
 ];
+
+export const people = [
+  {
+    id: 1,
+    name: "TEH CHIN CHEAT (RAYMOND)",
+    seat: 1,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 2,
+    name: "SOO CHI HONG (JARYL)",
+    seat: 1,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 3,
+    name: "SHAHRIMAN NG",
+    seat: 2,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 4,
+    name: "CHIM BEE YEN",
+    seat: 2,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 5,
+    name: "MUHAMMAD NAZRI BIN MARWAJI",
+    seat: 3,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 6,
+    name: "PRATEEK ROY",
+    seat: 3,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 7,
+    name: "CHONG MAY YAN (YANUS)",
+    seat: 4,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 8,
+    name: "LEONG WAI YEE",
+    seat: 4,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 9,
+    name: "DANIAL HIJJAZ BIN NASARUDIN",
+    seat: 5,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 10,
+    name: "LOH WEI LIK",
+    seat: 5,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 11,
+    name: "STELA MARY A/P MARIADAS",
+    seat: 6,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 12,
+    name: "SITI NURDIANA SOFEA BINTI AHMAD SHUKRI",
+    seat: 6,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 13,
+    name: "ASRUL HAFIZ BIN ZAINAL ABIDIN",
+    seat: 7,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 14,
+    name: "MUHAMMAD ZAKI HAZIQ BIN ABU BAKAR",
+    seat: 7,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 15,
+    name: "LOW YOOK CHAN (MONICA)",
+    seat: 8,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 16,
+    name: "MANSEE SAHU",
+    seat: 8,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 17,
+    name: "NORAZWAN BIN ZULKIFLI",
+    seat: 9,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 18,
+    name: "DANIEL STEVEN G. TRINIDAD",
+    seat: 9,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 19,
+    name: "IVY WAN YOKE LENG",
+    seat: 10,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 20,
+    name: "NG PEI CHIN",
+    seat: 10,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 21,
+    name: "AMRESH SINGH A/L RANJIT SINGH",
+    seat: 11,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 22,
+    name: "NISAR AHMED BASHIR",
+    seat: 11,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 23,
+    name: "NUR JIHAN BINTI JAMAL",
+    seat: 12,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 24,
+    name: "HARIPRIYA A/P SUKUMARAN",
+    seat: 12,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 25,
+    name: "SOHAN DIMITRI GUNASEKERA",
+    seat: 13,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 26,
+    name: "KAMAL ARIEFF BIN AHMAD FAIZEL",
+    seat: 13,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 27,
+    name: "SUAN LI WAH",
+    seat: 14,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 28,
+    name: "TAN MIN LYNN",
+    seat: 14,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 29,
+    name: "ZAKIR HYDER",
+    seat: 15,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 30,
+    name: "KOAY CHUIN XIONG (AARON)",
+    seat: 15,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 31,
+    name: "AHMAD FADHLY BIDJURI",
+    seat: 16,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 32,
+    name: "MOHD NIZAM BIN MOHAMMAD ZAWAWY",
+    seat: 16,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 33,
+    name: "ZAKIR WIFE",
+    seat: 17,
+    present: false,
+    doubleChecked: false
+  },
+  {
+    id: 34,
+    name: "ZAKIR SON",
+    seat: 17,
+    present: false,
+    doubleChecked: false
+  }
+];
