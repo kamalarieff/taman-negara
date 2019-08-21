@@ -7,13 +7,15 @@ import Typography from "@material-ui/core/Typography";
 import Drawer from "@material-ui/core/Drawer";
 import Volunteer from "./modules/volunteers";
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = () => setDrawerOpen(!drawerOpen);
   return (
-    <>
-      <AppBar position="static">
+    <Router>
+      <AppBar position="static" style={{ width: "100%" }}>
         <Toolbar>
           <Typography variant="h6" onClick={toggleDrawer}>
             Menu
@@ -21,13 +23,27 @@ function App() {
         </Toolbar>
       </AppBar>
       <Drawer open={drawerOpen} onClose={toggleDrawer}>
-        <p>Hello</p>
+        <div style={{ minWidth: "15em" }}>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Volunteers</Link>
+              </li>
+              <li>
+                <Link to="/bus/">Bus</Link>
+              </li>
+              <li>
+                <Link to="/users/">Users</Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </Drawer>
-      <Container maxWidth="md">
-        <Volunteer />
+      <Container maxWidth="md" style={{ overflowX: "auto" }}>
+        <Route path="/" exact component={Volunteer} />
+        <Route path="/bus/" component={Volunteer} />
       </Container>
-    </>
+    </Router>
   );
 }
-
 export default App;
