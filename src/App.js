@@ -48,24 +48,24 @@ function App() {
           <TableRow>
             <TableCell>Day</TableCell>
             <TableCell>Time</TableCell>
-            <TableCell>Where</TableCell>
             <TableCell>Task</TableCell>
             <TableCell>Who</TableCell>
+            <TableCell>Note</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {searchResult.map(({ Day, Time, Where, Task, Who }) => {
+          {searchResult.map(({ Day, Time, Task, Who, Note }) => {
             return (
               <TableRow>
                 <TableCell>{Day}</TableCell>
                 <TableCell>{Time}</TableCell>
-                <TableCell>{Where}</TableCell>
                 <TableCell>{Task}</TableCell>
                 <TableCell>
                   {Who.map(name => (
                     <p>{name}</p>
                   ))}
                 </TableCell>
+                <TableCell>{Note}</TableCell>
               </TableRow>
             );
           })}
