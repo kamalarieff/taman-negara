@@ -23,17 +23,27 @@ const initialState = data;
 function reducer(state, action) {
   return produce(state, draft => {
     switch (action.type) {
-      case "setPresent":
-        draft[action.payload].present = true;
+      case "setPresent": {
+        const temp = state.findIndex(({ id }) => action.payload === id);
+        draft[temp].present = true;
         break;
-      case "setAbsent":
-        draft[action.payload].present = false;
+      }
+      case "setAbsent": {
+        const temp = state.findIndex(({ id }) => action.payload === id);
+        draft[temp].present = false;
         break;
-      case "setDoubleCheck":
-        draft[action.payload].doubleChecked = true;
+      }
+      case "setDoubleCheck": {
+        const temp = state.findIndex(({ id }) => action.payload === id);
+        draft[temp].doubleChecked = true;
         break;
+      }
       case "unSetDoubleCheck":
-        draft[action.payload].doubleChecked = false;
+        const temp = state.findIndex(({ id }) => action.payload === id);
+        draft[temp].doubleChecked = false;
+        break;
+      case "sortSeat":
+        draft.reverse();
         break;
       default:
         throw new Error();
@@ -65,14 +75,20 @@ export default () => {
   const handlePresent = ({ present, id }) => () => {
     dispatch({
       type: !present ? "setPresent" : "setAbsent",
-      payload: id - 1
+      payload: id
     });
   };
 
   const handleDoubleChecked = ({ doubleChecked, id }) => () => {
     dispatch({
       type: !doubleChecked ? "setDoubleCheck" : "unSetDoubleCheck",
-      payload: id - 1
+      payload: id
+    });
+  };
+
+  const sortToggle = () => {
+    dispatch({
+      type: "sortSeat"
     });
   };
 
@@ -92,7 +108,7 @@ export default () => {
         <TableHead>
           <TableRow>
             <TableCell>Name</TableCell>
-            <TableCell>Seat</TableCell>
+            <TableCell onClick={sortToggle}>Seat</TableCell>
             <TableCell>Present</TableCell>
             <TableCell>Double Checked</TableCell>
           </TableRow>
